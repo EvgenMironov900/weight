@@ -1,0 +1,23 @@
+# Личные данные
+weight.json
+weight.json.bak.*
+
+# Бэкапы
+*.bak.*
+*.bak
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Редакторы
+*~
+.vscode/
+.idea/
+
+# ОС
+.DS_Store
+Thumbs.db
