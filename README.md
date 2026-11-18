@@ -22,36 +22,53 @@ weight/
 │   ├── show_weight.py         # показать динамику
 │   ├── remove_weight.py       # удалить запись по дате
 │   ├── migrate_weight.py      # миграция структуры (если понадобится изменить формат)
-│   └── Прибамбасы.py          # библиотека функций (копия из Pribambasy)
+│   └── Прибамбасы.py          # библиотека функций (в процессе создания)
 ├── weight.example.json        # ПРИМЕР данных (обезличенный)
 ├── weight.sh                  # обёртка/диспетчер (алиас `wes`)
 ├── README.md                  # этот файл
 ├── LICENSE                    # MIT
-└── .gitignore                 # что не коммитить
+└── .gitignore                 # чего здесь нет из локальной папки проекта weight
 ```
 
 Важно: файла `weight.json` в репозитории нет — он в `.gitignore`,
-потому что это личные данные. Чтобы начать:
+потому что это личные данные. Чтобы начать, создайте
+копию `weight.example.json` с именем `weight.json`:
 
 ```bash
 cp weight.example.json weight.json
 ```
 
-После этого `weight.json` — ваш файл с вашими данными.
+После этого `weight.json` — Ваш файл с Вашими данными, отредактируйте его
+Вашим любимым текстовым редактором.
 `weight.example.json` — не трогайте, он остаётся примером.
 
 ## Установка и запуск
 
-1. Склонируйте репозиторий (скачайте папку с проектом на свой компьютер):
+1. Скачайте папку с проектом на свой компьютер
+
+### Способ 1: через Git (рекомендуется)
+
+Склонируйте репозиторий:
 
 ```bash
 git clone https://github.com/EvgenMironov900/weight.git
 cd weight
 ```
-git clone — скачивает все файлы проекта с GitHub в папку weight в текущей директории.
-cd weight — переходит в эту папку.
+`git clone` — скачивает все файлы проекта с GitHub в папку `weight` в текущей директории.
+`cd weight` — переходит в эту папку.
 
-2. Скопируйте пример данных:
+### Способ 2: без Git (скачать архив)
+
+Если у вас не установлен Git — можно скачать архив с релизом:
+
+Откройте страницу релизов: [https://github.com/EvgenMironov900/weight/releases](https://github.com/EvgenMironov900/weight/releases)
+
+Скачайте Source code (zip) (для Windows) или Source code (tar.gz) (для Linux/macOS).
+Распакуйте архив — получите папку с файлами проекта.
+
+Оба способа дают одинаковый результат: папку weight с файлами проекта.
+
+2. Скопируйте пример данных (об этом уже написано в пункте "Что внутри"):
 
 ```bash
 cp weight.example.json weight.json
@@ -121,8 +138,9 @@ wes
 
 ## Лицензия
 
-MIT. См. `LICENSE`.
+MIT. См. [LICENSE](https://github.com/EvgenMironov900/weight/blob/main/LICENSE).
 
 ## Автор
 
-Евгений Миронов (EvgenMironov900), 2026.
+**Евгений Миронов** [EvgenMironov900](https://github.com/EvgenMironov900), 2026.
+
